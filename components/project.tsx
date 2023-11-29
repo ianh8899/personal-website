@@ -44,7 +44,7 @@ export default function Project({
                                 <div className="col-span-full md:col-span-3 flex justify-center">
                                     {githubLink && (
                                         <a href={githubLink} target="_blank" rel="noopener noreferrer"
-                                           className="absolute translate-x-1/2 top-24 md:top-40 md:left-40 sm:top-24 sm:left-1/2">
+                                           className="absolute translate-x-1/2 top-24 lg:top-40 lg:left-40 sm:top-24 sm:left-1/2">
                                             <FaGithub className="scale-[3] hover:scale-[4] hover:duration-300"/>
                                         </a>
                                     )
@@ -81,7 +81,7 @@ export default function Project({
                                 <div className="col-span-full md:col-span-3 flex justify-center">
                                     {githubLink &&
                                         <a href={githubLink} target="_blank" rel="noopener noreferrer"
-                                           className="absolute translate-x-1/2 top-24 md:top-40 md:right-40 sm:top-24 sm:right-1/2">
+                                           className="absolute translate-x-1/2 top-24 lg:top-40 lg:right-40 sm:top-24 sm:right-1/2">
                                             <FaGithub className="scale-[3] hover:scale-[4] hover:duration-300"/>
                                         </a>}
                                     <a href={projectLink} target="_blank" rel="noopener noreferrer">
