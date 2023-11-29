@@ -3,6 +3,7 @@
 import {useRef} from "react";
 import {projectsData} from "@/lib/data";
 import {motion, useScroll, useTransform} from "framer-motion";
+import { FaGithub } from "react-icons/fa6";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -13,7 +14,8 @@ export default function Project({
                                     projectLink,
                                     imageUrl,
                                     icons,
-                                    index
+                                    index,
+                                    githubLink,
                                 }: ProjectProps) {
     const ref = useRef<HTMLDivElement>(null);
     const {scrollYProgress} = useScroll({
@@ -37,16 +39,22 @@ export default function Project({
                 <div className="mx-auto px-4" style={{ maxWidth: "90rem" }}>
                     <div className="p-12 bg-white shadow-2xl rounded-lg dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition">
                         <div className="grid grid-cols-1 lg:grid-cols-7 gap-8 my-20 items-center">
-
                             {/* Image on the left for odd indices */}
                             {isOdd && (
                                 <div className="col-span-full md:col-span-3 flex justify-center">
+                                    {githubLink && (
+                                        <a href={githubLink} target="_blank" rel="noopener noreferrer"
+                                           className="absolute translate-x-1/2 top-24 md:top-40 md:left-40 sm:top-24 sm:left-1/2">
+                                            <FaGithub className="scale-[3] hover:scale-[4] hover:duration-300"/>
+                                        </a>
+                                    )
+                                    }
                                     <a href={projectLink} target="_blank" rel="noopener noreferrer">
                                         <motion.div
                                             className="overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 rounded-lg"
                                             whileHover={{ scale: 1.04, translateX: 10, translateY: -10, rotate: 2 }}
                                         >
-                                            <img src={imageUrl} alt={title} className="w-full object-contain max-h-96"/>
+                                            <img src={imageUrl} alt={title} className="w-full object-contain max-h-80"/>
                                         </motion.div>
                                     </a>
                                 </div>
@@ -62,20 +70,26 @@ export default function Project({
                                         <li key={index}>{feature}</li>
                                     ))}
                                 </ul>
-                                <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap mt-8">
+                                <div className="hidden xl:block flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap mt-8">
                                     {icons}
                                 </div>
                             </div>
 
                             {/* Image on the right for even indices */}
                             {!isOdd && (
+
                                 <div className="col-span-full md:col-span-3 flex justify-center">
+                                    {githubLink &&
+                                        <a href={githubLink} target="_blank" rel="noopener noreferrer"
+                                           className="absolute translate-x-1/2 top-24 md:top-40 md:right-40 sm:top-24 sm:right-1/2">
+                                            <FaGithub className="scale-[3] hover:scale-[4] hover:duration-300"/>
+                                        </a>}
                                     <a href={projectLink} target="_blank" rel="noopener noreferrer">
                                         <motion.div
-                                            className="overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 rounded-lg"
+                                            className="overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 rounded-lg "
                                             whileHover={{ scale: 1.04, translateX: -10, translateY: 10, rotate: -2 }}
                                         >
-                                            <img src={imageUrl} alt={title} className="w-full object-contain max-h-96"/>
+                                            <img src={imageUrl} alt={title} className="w-full object-contain max-h-80"/>
                                         </motion.div>
                                     </a>
                                 </div>
