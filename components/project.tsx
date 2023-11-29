@@ -4,6 +4,7 @@ import {useRef} from "react";
 import {projectsData} from "@/lib/data";
 import {motion, useScroll, useTransform} from "framer-motion";
 import { FaGithub } from "react-icons/fa6";
+import Image from "next/image";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -53,7 +54,13 @@ export default function Project({
                                             className="overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 rounded-lg"
                                             whileHover={{ scale: 1.04, translateX: 10, translateY: -10, rotate: 2 }}
                                         >
-                                            <img src={imageUrl} alt={title} className="w-full object-contain max-h-80"/>
+                                            <Image src={imageUrl}
+                                                   alt={title}
+                                                   width="600"
+                                                   height="80"
+                                                   quality="95"
+                                                   priority={true}
+                                                   className="w-full object-contain max-h-80"/>
                                         </motion.div>
                                     </a>
                                 </div>
@@ -87,7 +94,13 @@ export default function Project({
                                             className="overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 rounded-lg "
                                             whileHover={{ scale: 1.04, translateX: -10, translateY: 10, rotate: -2 }}
                                         >
-                                            <img src={imageUrl} alt={title} className="w-full object-contain max-h-80"/>
+                                            <Image src={imageUrl}
+                                                   alt={title}
+                                                   width="600"
+                                                   height="80"
+                                                   quality="95"
+                                                   priority={true}
+                                                   className="w-full object-contain max-h-80"/>
                                         </motion.div>
                                     </a>
                                 </div>
