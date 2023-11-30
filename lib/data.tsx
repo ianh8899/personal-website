@@ -100,7 +100,7 @@ export const projectsData = [
   {
     index: 0,
     title: "Community App",
-    description: "This project represents a social media platform built using modern tools and technologies. Users can share their thoughts, dive into discussions, and connect with the digital community",
+    description: "This project represents a social media platform built using modern tools and technologies. Users can share their thoughts, dive into discussions, and connect with the digital community.",
     features: [
       "Frontend: The application's frontend is crafted with Next.js, optimizing for faster page loads and enhanced SEO. TypeScript brings a layer of type safety, ensuring a robust application with fewer runtime errors.",
       "Backend: Express.js, running within the Node.js environment, managing server-side operations, routing, and data handling.",
@@ -110,6 +110,8 @@ export const projectsData = [
     projectLink: "https://community-mern.vercel.app/",
     githubLink: "https://github.com/ianh8899/Community-MERN",
     imageUrl: "/community-mern.png",
+    exampleUsername:"example",
+    examplePassword:"c0mmuun1ty",
     icons: (
         <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
           <SiTypescript size="40" color={"#3178C6"} className="my-2"/>
@@ -132,6 +134,8 @@ export const projectsData = [
     projectLink: "http://ecommerce2569896.co.uk/",
     githubLink: "https://github.com/ianh8899/Shopping",
     imageUrl: "/eCommerce Image.jpg",
+    exampleUsername:"",
+    examplePassword:"",
     icons: (
         <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
           <FaReact size="40" color={"#61DBFB"} className="my-2"/>
@@ -153,6 +157,8 @@ export const projectsData = [
     projectLink: "https://github.com/ianh8899/rfq-app",
     imageUrl: "/rfqApp screenshot.png",
     githubLink: "https://github.com/ianh8899/rfq-app",
+    exampleUsername:"",
+    examplePassword:"",
     icons: (
         <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
           <SiMongodb size="40" color={"#4DB33D"} className="my-2"/>
@@ -176,6 +182,8 @@ export const projectsData = [
     projectLink: "https://www.hyperiondev.com/portfolio/139412/",
     githubLink: "",
     imageUrl: "/Hyperiondev-logo.jpg",
+    exampleUsername:"",
+    examplePassword:"",
     icons: (
         <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
           <SiJavascript size="40" color={"#f8c41b"} className="my-2"/>
