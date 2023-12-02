@@ -34,7 +34,7 @@ export default function About() {
       <p>
         When not immersed in coding, my interests include <span className="italic">cooking and traveling</span>.
         I thoroughly enjoy <span className="font-medium">learning new things</span>,
-        currently I'm delving into the <span className="font-medium">evolution of global cuisines</span>.
+        currently I'm learning <span className="font-medium">dutch</span>.
       </p>
 
     </motion.section>

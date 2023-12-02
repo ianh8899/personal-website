@@ -1,11 +1,6 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import {FaCss3Alt, FaHtml5, FaNode, FaReact, FaSass, FaStripe} from "react-icons/fa";
 import {SiExpress, SiJavascript, SiMongodb, SiNextdotjs, SiTypescript, SiStrapi} from "react-icons/si";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -105,7 +100,7 @@ export const projectsData = [
   {
     index: 0,
     title: "Community App",
-    description: "This project represents a social media platform built using modern tools and technologies. Users can share their thoughts, dive into discussions, and connect with the digital community",
+    description: "This project represents a social media platform built using modern tools and technologies. Users can share their thoughts, dive into discussions, and connect with the digital community.",
     features: [
       "Frontend: The application's frontend is crafted with Next.js, optimizing for faster page loads and enhanced SEO. TypeScript brings a layer of type safety, ensuring a robust application with fewer runtime errors.",
       "Backend: Express.js, running within the Node.js environment, managing server-side operations, routing, and data handling.",
@@ -113,7 +108,10 @@ export const projectsData = [
       "Database: MongoDB is at the core of data management, ensuring efficient storage and retrieval of user content."
     ],
     projectLink: "https://community-mern.vercel.app/",
+    githubLink: "https://github.com/ianh8899/Community-MERN",
     imageUrl: "/community-mern.png",
+    exampleUsername:"example",
+    examplePassword:"c0mmuun1ty",
     icons: (
         <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
           <SiTypescript size="40" color={"#3178C6"} className="my-2"/>
@@ -134,7 +132,10 @@ export const projectsData = [
       "Payments: Integration of Stripe in test mode demonstrates potential for secure transactions."
     ],
     projectLink: "http://ecommerce2569896.co.uk/",
+    githubLink: "https://github.com/ianh8899/Shopping",
     imageUrl: "/eCommerce Image.jpg",
+    exampleUsername:"",
+    examplePassword:"",
     icons: (
         <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
           <FaReact size="40" color={"#61DBFB"} className="my-2"/>
@@ -146,7 +147,7 @@ export const projectsData = [
   },
   {
     index: 2,
-    title: "Request for Quotation Manager - MERN Application",
+    title: "Quotation Manager",
     description: "The RFQ MERN Application streamlines the procurement process, enabling interaction between buyers and suppliers in small organizations.",
     features: [
       "3-tier Architecture: Frontend with React.js, Backend with Express.js and Node.js, Database managed by MongoDB.",
@@ -155,6 +156,9 @@ export const projectsData = [
     ],
     projectLink: "https://github.com/ianh8899/rfq-app",
     imageUrl: "/rfqApp screenshot.png",
+    githubLink: "https://github.com/ianh8899/rfq-app",
+    exampleUsername:"",
+    examplePassword:"",
     icons: (
         <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
           <SiMongodb size="40" color={"#4DB33D"} className="my-2"/>
@@ -176,7 +180,10 @@ export const projectsData = [
       "API Integration and Frameworks: React, Next.js."
     ],
     projectLink: "https://www.hyperiondev.com/portfolio/139412/",
+    githubLink: "",
     imageUrl: "/Hyperiondev-logo.jpg",
+    exampleUsername:"",
+    examplePassword:"",
     icons: (
         <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
           <SiJavascript size="40" color={"#f8c41b"} className="my-2"/>
