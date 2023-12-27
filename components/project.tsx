@@ -62,12 +62,12 @@ export default function Project({
                             {isOdd && (
                                 <div className="col-span-full md:col-span-3 flex justify-center">
                                     {githubLink && (
-                                        <a href={githubLink} target="_blank" rel="noopener noreferrer"
+                                        <a href={githubLink} target="_blank" rel="noopener noreferrer" aria-label="Github Link to Project"
                                            className="absolute translate-x-1/2 top-24 lg:top-40 lg:left-40 sm:top-24 sm:left-1/2">
                                             <FaGithub className="scale-[3] hover:scale-[4] hover:duration-300"/>
                                         </a>
                                     )}
-                                    <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                                    <a href={projectLink} target="_blank" rel="noopener noreferrer" aria-label="Link to Hosted Project">
                                         <motion.div
                                             className="overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 rounded-lg"
                                             whileHover={{scale: 1.04, translateX: 10, translateY: -10, rotate: 2}}
