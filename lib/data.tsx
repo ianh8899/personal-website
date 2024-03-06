@@ -1,6 +1,9 @@
 import React from "react";
-import {FaCss3Alt, FaHtml5, FaNode, FaReact, FaSass, FaStripe} from "react-icons/fa";
+import {FaCloudflare, FaCss3Alt, FaFire, FaHtml5, FaNode, FaReact, FaSass, FaStripe} from "react-icons/fa";
 import {SiExpress, SiJavascript, SiMongodb, SiNextdotjs, SiTypescript, SiStrapi} from "react-icons/si";
+import {RiSupabaseFill} from "react-icons/ri";
+import {SkillIconsHtmxLight} from "@/components/svg/htmx";
+import {LogosHono} from "@/components/svg/hono";
 
 export const links = [
   {
@@ -124,6 +127,30 @@ export const projectsData = [
   },
   {
     index: 1,
+    title: "Soupabase REST API",
+    description: "Soupabase is a public free to use and fast REST API that returns all data types for use in teaching, testing and prototyping for front end applications.",
+    features: [
+      "Frontend: Served from the backend with HTML responses making use of HTMX and tailwind",
+      "Backend: Hono as the server and Supabase for the database",
+      "Hosting: Hosted on a cloudflare worker for fast responses."
+    ],
+    projectLink: "http://soupabase.com/",
+    githubLink: "https://github.com/ianh8899/soupabase",
+    imageUrl: "/soupabase.webp",
+    exampleUsername:"",
+    examplePassword:"",
+    icons: (
+        <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
+          {/* Replace FaReact with appropriate HTMX icon */}
+          <SkillIconsHtmxLight color={"#61DBFB"} className="my-2"/>
+          <LogosHono color={"#FFA500"} className="my-2"/>
+          <RiSupabaseFill size="40" color={"#37c082"} className="my-2"/>
+          <FaCloudflare size="40" color={"#F38020"} className="my-2"/>
+        </div>
+    )
+  },
+  {
+    index: 2,
     title: "Clothing Store eCommerce App",
     description: "This project serves as a demonstration of a full-stack e-Commerce platform. While currently just an example, the underlying architecture and technical integration showcase a cohesive blend of frontend and backend technologies.",
     features: [
@@ -146,7 +173,7 @@ export const projectsData = [
     )
   },
   {
-    index: 2,
+    index: 3,
     title: "Quotation Manager",
     description: "The RFQ MERN Application streamlines the procurement process, enabling interaction between buyers and suppliers in small organizations.",
     features: [
@@ -169,7 +196,7 @@ export const projectsData = [
     )
   },
   {
-    index: 3,
+    index: 4,
     title: "HyperionDev Portfolio",
     description: "A comprehensive learning journey through Full Stack Web Development, covering front-end and back-end technologies, security protocols, and API integration.",
     features: [
