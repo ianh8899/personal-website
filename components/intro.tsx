@@ -50,9 +50,8 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, my name is Ian.</span> I'm a{" "}
         <span className="font-bold">Web developer!</span>{" "}
-        <span className="font-bold"></span>I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold"></span>I enjoy building{" "}
+        <span className="italic">sites & apps</span>.
       </motion.h1>
 
       <motion.div
@@ -76,12 +75,13 @@ export default function Intro() {
         </Link>
 
         <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/IanHitchmanCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          href="/Ian_Hitchman_cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Download CV{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
