@@ -55,7 +55,7 @@ export const experiencesData = [
     description:
       "Working with a team of developers to develop and maintain a web application for the dental industry. Primarily using Angular, Node, GraphQL.",
     imgURL: "/henry_logo.jpeg",
-    date: "June 2024- Present",
+    date: "June 2024- June 2025",
   },
   {
     company: "Beachshore Design - Watford, UK",
