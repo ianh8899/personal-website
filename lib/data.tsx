@@ -16,6 +16,7 @@ import {
   SiNextdotjs,
   SiTypescript,
   SiStrapi,
+  SiOllama,
 } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
 import { SkillIconsHtmxLight } from "@/components/svg/htmx";
@@ -150,6 +151,32 @@ export const projectsData = [
   },
   {
     index: 1,
+    title: "Flaude AI App",
+    description:
+      "A proof of concept Ai application based on Clauda.ai utilising a full stack of technologies to deliver a modern ai saas application.",
+    features: [
+      "Frontend: The application's client is built in React, TypeScript brings a layer of type safety, ensuring a robust application with fewer runtime errors.",
+      "Backend: Hono, running within the Node.js environment, managing server-side operations, routing, and data handling.",
+      "Stripe: To take customer payments for the AI service.",
+      "Ai Model: Tinyllama model running with the Ollama API for fast and efficient responses.",
+    ],
+    projectLink: "https://flaude-ai.ianhitchman.co.uk/",
+    githubLink: "https://github.com/ianh8899/flaude-ai",
+    imageUrl: "/flaudeai.png",
+    exampleUsername: "user@example.com",
+    examplePassword: "password",
+    icons: (
+      <div className="flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap">
+        <SiTypescript size="40" color={"#3178C6"} className="my-2" />
+        <FaReact size="40" color={"#61DBFB"} className="my-2" />
+        <LogosHono color={"#FFA500"} className="my-2" />
+        <FaStripe size="40" color={"#635BFF"} className="my-2" />
+        <SiOllama size="40" color={"#000000"} className="my-2" />
+      </div>
+    ),
+  },
+  {
+    index: 2,
     title: "Community App",
     description:
       "This project represents a social media platform built using modern tools and technologies. Users can share their thoughts, dive into discussions, and connect with the digital community.",
@@ -175,7 +202,7 @@ export const projectsData = [
     ),
   },
   {
-    index: 2,
+    index: 3,
     title: "Quotation Manager",
     description:
       "The RFQ MERN Application streamlines the procurement process, enabling interaction between buyers and suppliers in small organizations.",
@@ -199,7 +226,7 @@ export const projectsData = [
     ),
   },
   {
-    index: 3,
+    index: 4,
     title: "HyperionDev Portfolio",
     description:
       "A comprehensive learning journey through Full Stack Web Development, covering front-end and back-end technologies, security protocols, and API integration.",

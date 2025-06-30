@@ -59,7 +59,7 @@ export default function Project({
             <div className="grid grid-cols-1 lg:grid-cols-7 gap-8 my-20 items-center">
               {/* Image on the left for odd indices */}
               {isOdd && (
-                <div className="col-span-full md:col-span-3 flex justify-center">
+                <div className="col-span-full md:col-span-3 flex flex-col items-center">
                   {githubLink && (
                     <a
                       href={githubLink}
@@ -84,72 +84,6 @@ export default function Project({
                         translateX: 10,
                         translateY: -10,
                         rotate: 2,
-                      }}
-                    >
-                      <Image
-                        src={imageUrl}
-                        alt={title}
-                        width="600"
-                        height="80"
-                        quality="95"
-                        priority={true}
-                        className="w-full object-contain max-h-80"
-                      />
-                    </motion.div>
-                  </a>
-                </div>
-              )}
-
-              {/* Content */}
-              <div
-                className={`col-span-full ${
-                  isOdd ? "lg:col-span-4 lg:col-start-4" : "lg:col-span-4"
-                }`}
-              >
-                <h4 className="text-3xl font-medium capitalize mb-8 text-center dark:text-white">
-                  {title}
-                </h4>
-                <p className="mb-6 text-lg leading-relaxed dark:text-white/70 flex items-center">
-                  {description}
-                </p>
-                <h5 className="mb-4 font-semibold text-lg dark:text-white">
-                  Key Technical Features:
-                </h5>
-                <ul className="mb-6 list-disc pl-5 space-y-2 text-lg dark:text-white/70">
-                  {features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-                <div className="hidden xl:block flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap mt-8">
-                  {icons}
-                </div>
-              </div>
-
-              {/* Image on the right for even indices */}
-              {!isOdd && (
-                <div className="col-span-full md:col-span-3 flex flex-col items-center">
-                  {githubLink && (
-                    <a
-                      href={githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="absolute translate-x-1/2 top-24 lg:top-40 lg:right-40 sm:top-24 sm:right-1/2"
-                    >
-                      <FaGithub className="scale-[3] hover:scale-[4] hover:duration-300" />
-                    </a>
-                  )}
-                  <a
-                    href={projectLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <motion.div
-                      className="overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 rounded-lg"
-                      whileHover={{
-                        scale: 1.04,
-                        translateX: -10,
-                        translateY: 10,
-                        rotate: -2,
                       }}
                     >
                       <Image
@@ -208,6 +142,72 @@ export default function Project({
                       )}
                     </div>
                   )}
+                </div>
+              )}
+
+              {/* Content */}
+              <div
+                className={`col-span-full ${
+                  isOdd ? "lg:col-span-4 lg:col-start-4" : "lg:col-span-4"
+                }`}
+              >
+                <h4 className="text-3xl font-medium capitalize mb-8 text-center dark:text-white">
+                  {title}
+                </h4>
+                <p className="mb-6 text-lg leading-relaxed dark:text-white/70 flex items-center">
+                  {description}
+                </p>
+                <h5 className="mb-4 font-semibold text-lg dark:text-white">
+                  Key Technical Features:
+                </h5>
+                <ul className="mb-6 list-disc pl-5 space-y-2 text-lg dark:text-white/70">
+                  {features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                </ul>
+                <div className="hidden xl:block flex justify-center space-x-24 max-w-4xl mx-auto flex-wrap mt-8">
+                  {icons}
+                </div>
+              </div>
+
+              {/* Image on the right for even indices */}
+              {!isOdd && (
+                <div className="col-span-full md:col-span-3 flex justify-center">
+                  {githubLink && (
+                    <a
+                      href={githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute translate-x-1/2 top-24 lg:top-40 lg:right-40 sm:top-24 sm:right-1/2"
+                    >
+                      <FaGithub className="scale-[3] hover:scale-[4] hover:duration-300" />
+                    </a>
+                  )}
+                  <a
+                    href={projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <motion.div
+                      className="overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 rounded-lg"
+                      whileHover={{
+                        scale: 1.04,
+                        translateX: -10,
+                        translateY: 10,
+                        rotate: -2,
+                      }}
+                    >
+                      <Image
+                        src={imageUrl}
+                        alt={title}
+                        width="600"
+                        height="80"
+                        quality="95"
+                        priority={true}
+                        className="w-full object-contain max-h-80"
+                      />
+                    </motion.div>
+                  </a>
                 </div>
               )}
             </div>
